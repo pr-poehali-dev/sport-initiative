@@ -67,6 +67,7 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8 max-w-7xl">
         
         <header className="mb-12 text-center">
+          <p className="text-sm text-primary font-semibold mb-6 tracking-wider uppercase">Начни свой путь к здоровью</p>
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center">
               <Icon name="Dumbbell" size={24} className="text-white" />
