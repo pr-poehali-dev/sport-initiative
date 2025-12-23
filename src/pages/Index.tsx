@@ -8,14 +8,16 @@ const Index = () => {
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         
         <div className="text-center mb-16 animate-fade-in">
-          <div className="w-32 h-32 rounded-full bg-gradient-primary mx-auto mb-6 flex items-center justify-center">
-            <span className="text-5xl font-bold text-white">МА</span>
-          </div>
+          <img 
+            src="https://cdn.poehali.dev/projects/5990a685-7de9-46e5-adad-089def79b6dd/files/89c03a64-9107-4f89-a6a5-e69300c042d6.jpg" 
+            alt="Монгуш Айрат" 
+            className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-primary/20"
+          />
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             Монгуш Айрат
           </h1>
           <p className="text-2xl text-muted-foreground mb-2">11а класс</p>
-          <div className="flex items-center justify-center gap-4 mt-8">
+          <div className="flex items-center justify-center gap-4 mt-8 flex-wrap">
             <Button variant="outline" size="lg" className="rounded-xl gap-2">
               <Icon name="Mail" size={20} />
               Написать
@@ -23,6 +25,15 @@ const Index = () => {
             <Button size="lg" className="rounded-xl gap-2 bg-gradient-primary hover:opacity-90">
               <Icon name="Phone" size={20} />
               Позвонить
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="rounded-xl gap-2"
+              onClick={() => window.open('https://t.me/your_bot', '_blank')}
+            >
+              <Icon name="Bot" size={20} />
+              Telegram Бот
             </Button>
           </div>
         </div>
